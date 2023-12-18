@@ -1,0 +1,10 @@
+Template literals = delimited with(`) 
+			  instead of double or single quotes
+			  allows embedded variables and expressions
+
+Instead of this console.log("hello", money) 
+	you get this -->
+console.log(`hello ${money}`)
+
+that's it
+

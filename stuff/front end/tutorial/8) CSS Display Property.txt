@@ -1,0 +1,34 @@
+3 basic elements:
+1) block-element - takes whole line(like paragraph)
+2) inline-bock element - takes place as much as needed(like image, or input)
+3) inline element- element within a text(<strong> for example, it makes line bold)
+
+.video-stats,        ------> by comma you can set one style to multiple classes, text wont be block element, it will be inline-block element
+.video-author{
+  display: inline-block;
+ }
+
+------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google now</title>
+    <style>
+      .google{
+        display: block;
+        width: 450px;
+        margin-left: 180px;
+      }
+      .search{
+        margin-left: 320px;
+        margin-top: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="google" src="thambnails\screen-shot-2015-10-08-at-4-20-16-pm.png" alt="sorry bitch">   --> they displace by order, image first--> on the webpage its gon be first
+    <input class="search" type="text" placeholder="Search Google or type URL">
+  </body>
+</html>
+

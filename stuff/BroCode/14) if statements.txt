@@ -1,0 +1,27 @@
+if statement = a basic form of decision making if a condition is true, then do something if not, then don't do it!
+
+let age = 10
+
+if(age >= 18){
+  console.log("You can drink")
+}
+else{
+  console.log("Go home little shit!")
+}
+
+
+-----------------------------------------------------------------------------------
+  TO CHECK IF THERE BOOLEAN NUMBERS
+
+let online = false
+
+if(online){                        --> it you didn't write =, it means that "online" qutomaticly true
+  console.log("You are online")
+ }
+else{
+  console.log("you lying bitch")
+}
+
+
+-------------------------------------------------------------------------------------
+

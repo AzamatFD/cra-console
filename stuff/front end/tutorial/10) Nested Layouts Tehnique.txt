@@ -1,0 +1,138 @@
+There are 2 types of layouts:
+1) Vertycal Layouts
+2) Horizontal Layouts
+
+You can have layouts inside layouts inside layouts(like youtube <div>)
+Using layouts you can create almost everything in yout website
+
+TO CREATE LAYOUTS:
+1) create divs as much as number of layouts you use(you create layout divs within divs)
+2) put everything you need inside of the divs
+
+you turn divs into a inline-block so you can move them
+<div>s are block elements by default,so to make them stand by each other you make them inline-blocks
+<p>s takes whole place INSIDE if the divs!
+
+<div>s by default have width 100%, it means they streth for all width inside another <div> element
+в другом диве они растягиватются на 100 процентов, то есть на полную длину по умолчанию
+
+по умолчанию изображения сохраняют свой размер, чтобы оно входило в размеры layout'а нужно его размер подогнать под размер layout'а
+.profile-picture{
+        width: 100%;  --> you can also set width to 100%
+
+<p> by default has margin at the top and margin at the bottom
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        display: block;
+      }
+      .search-bar{
+        display: block;
+      }
+      .video-preview{
+        display: inline-block;
+        width: 300px;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+      .channel-picture{
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+      .video-info{
+        display: inline-block;
+        width: 200px;
+      }
+      .profile-picture{
+        width: 100%;
+      }
+      .video-title{
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type ="text" placeholder="Search">
+    
+    <div class="video-preview">
+      <div>
+        <img class="thumbnail" src="thambnails/thumbnail-1.webp" alt="sorry(">
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title"> 
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class="video-author">
+            Marques Brownlee
+          </p>
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="thambnails/thumbnail-2.webp" alt="sorry(">
+      <p class="video-title"> 
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">
+        Markiplier
+      </p>
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
+      
+    </div>
+  </body>
+</html>
+
+--------------------------------------------------------
+dont know why but automaticly I had 3 more vertical layouts, named video-title, video-author,video-stats
+
+--------------------------------------------------------
+                                               FONT STACK
+font-family: Roboto, Arial;  --> 2 font by comma is font stack, it means if Roboto fails to download, Arial will be setted
+
+--------------------------------------------------------
+
+чтобы создать такую же превьюху я скопировал весь код, который был создан для создания первой превьюхи и просто заменил названия и изображения
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

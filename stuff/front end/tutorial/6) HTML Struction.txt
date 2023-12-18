@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>          ------------------------------------------------> all unvisible part of code should be in head
+    <title>Buttons</title>  --> title is for the tab name
+    <style>
+      .subscribe_button {
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: 5px;
+      transition: opacity 0.15s;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      vertical-align: top;
+      }
+
+      .subscribe_button:hover{
+      opacity: 0.78;
+      }
+      .subscribe_button:active{
+      opacity: 0.5;
+      }
+
+
+      .join_button {
+      background-color: white;
+      border-color: rgb(6, 95, 212);
+      border-style: solid;
+      border-width: 0.8px;
+      color: rgb(6, 95, 212);
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: 5px;
+      transition: background-color 0.15s,
+      color 0.15s;
+      }
+      .join_button:hover {
+      background-color:  rgb(6, 95, 212);
+      color: white;
+      }
+      .join_button:active{
+     opacity: 0.5;
+     }
+      .tweet_button {
+      background-color: rgb(29, 155, 240);
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 17.5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+      font-stretch: wider;
+    
+    
+      }
+      .tweet_button:hover{
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.15)
+      }
+    </style>
+
+
+  </head>    
+  <body>  ---------------------------------------------------------> all the visible part of code should be in body
+    <button class="subscribe_button">SUBSCRIBE</button>
+
+    <button class="join_button">JOIN</button>
+
+    <button class="tweet_button"><b><b>Tweet</b></b></button>
+
+  </body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   you have too much code & youre mixing two types of languages, so you move CSS part into another file, so
+1) you create new CSS file(buttons.css)
+2) you move your style part there, but without <style> tag
+3) remove <style> tag, and write <link rel = "stylesheet" href = "buttons.css">  --> href(from where to get css)  /<link> doesnt requare closing tag
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons</title>
+    <link rel="stylesheet" href="buttons.css">   ---> here that sheet
+  </head>
+  <body>
+    <button class="subscribe_button">SUBSCRIBE</button>
+
+    <button class="join_button">JOIN</button>
+
+    <button class="tweet_button"><b><b>Tweet</b></b></button>
+
+  </body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                 FILEPATHS
+when you <link rel="stylesheet" href="buttons.css"> href can find files thats only beside him, to let him find files from folders, put folders name first, then slash/buttons.css
+<link rel="stylesheet" href="styles/buttons.css">  --> this is filepaths
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                NEW FONTS
+1)find new font in Goole Fonts
+2)choose and copy code from there, paste it then in <head> section 
+3) change CSS font-family for new font name, like Alberto
+4) save both files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

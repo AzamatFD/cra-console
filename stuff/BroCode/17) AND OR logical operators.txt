@@ -1,0 +1,66 @@
+Gives ability to check more than 1 condition concurrently
+&& AND all conditions must be true
+|| OR one of conditions must be true
+
+&&
+
+let tem = 15
+
+if(tem > 0 && tem < 30){
+  console.log("The weather is good")
+}
+else{
+  console.log("The weather is bad")
+}
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+||
+
+let tem = 15
+
+if(tem > 30 || tem < 0){
+  console.log("The weather is good")
+}
+else{
+  console.log("The weather is bad")
+}
+
+----------------------------------------------------------------------------------------------------------------
+YOU CAN ADD THIRD CONDITION
+for instance you can add boolean
+if sunny - weather is good, if not- weather is bad
+
+
+let tem = 15
+let sunny = false
+
+if(tem < 30 && tem > 0 && sunny){      --> if sunny equals false, the weather is bad, cuz ALL conditions have to be true
+  console.log("The weather is good")
+}
+else{
+  console.log("The weather is bad")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

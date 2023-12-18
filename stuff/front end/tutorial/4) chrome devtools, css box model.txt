@@ -1,0 +1,13 @@
+       chrome devtools
+this is HEX, same as rgb
+background-color: #1d9bf0;
+1d - how much green, 9b - blue, f0 - blue.
+you can convert to rgb using web calculator
+
+-------------------------
+          css boxmodel
+PADDING - spacing inside of the button
+let you change text-it will be inside
+vertical-align - to align the buttons by buttons not text
+
+

@@ -1,0 +1,12 @@
+Console.time() = starts a timer you can use to track how long an operation takes;
+			give each timer a unique name
+it shows how fast something being run between them:
+
+
+console.time("responde time")       --> timer names should be the same
+
+setTimeout(()=>console.log("this is it"))
+
+console.timeEnd("responde time")    --> same
+
+

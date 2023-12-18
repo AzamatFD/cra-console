@@ -1,0 +1,71 @@
+Variables can be numbers, strings, booleans
+To create variable write let, name of the variable 'name', then = to smth
+like:
+		let anme = 'aza';
+
+
+
+JavaScript part is here below:
+
+let name = 'aza'   --> variables
+let age = 21;
+let student = true;
+
+console.log('hello',name);    --> to add someething into your variable use that
+console.log('you are', age, ' years old');
+console.log('that is', student);
+
+document.getElementById("p1").innerHTML = "hello " + name                    --> to write that text on the page
+document.getElementById("p2").innerHTML = "you are " + age + "years old"         you get access to html part(below) by this
+document.getElementById("p3").innerHTML = "that is " + student
+
+------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>           --> standart code to start the page
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="p1"></p>    --> text on the page
+  <p id="p2"></p>
+  <p id="p3"></p>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+! NOT logical operator
+typically used to reverse a condition's boolean value
+
+let tem = 15
+let sun = true
+if(!(tem > 0)){
+  console.log("Its good weather")
+}
+else{
+  console.log("Bad weather")
+}
+Bad weather
+
+
+
+if(!sun){
+  console.log("sunny")
+}
+else{
+  console.log("cloudy")
+}
+cloudy

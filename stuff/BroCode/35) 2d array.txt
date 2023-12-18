@@ -1,0 +1,16 @@
+2D array = an array of arrays
+
+
+let fruits =     ["apples", "oranges", "bananas"]
+let vegetables = ["carrots", "onions", "potatos"]
+let meats =      ["eggs", "chicken","fish"]
+
+let groceries = [fruits, vegetables, meats]   --> 2D array
+
+groceries[2][0] = "steak"    --> replased "eggs" with "steak"(first[] for rows, second[] for columns)
+
+for(let list of groceries){
+  for(let food of list){
+    console.log(food)
+  }
+}

@@ -1,0 +1,47 @@
+DIVs are BLOCK element by default
+
+---------------------------------
+
+DIV is ment to be like a ,box, container
+it can contain any element
+its perfect for real world websites, like youtube, twitter...
+box with image and some text - dev
+its drawing a box around the content inside
+text within DIV element is not block now, and cant take all the place in webpage
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        display: block;
+      }
+      .search-bar{
+      }
+      .video-title{
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type ="text" placeholder="Search">
+    
+    <div class="video-preview">-------------------------------------------
+      <img class="thumbnail" src="/thambnails/thumbnail-1.webp" alt="sorry(">
+      <p class="video-title"> 
+        Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+      <p class="video-author">
+        Marques Brownlee
+      </p>
+      <p class="video-stats">
+        3.4M views &#183; 6 months ago                                     ---> text here now take place inside of a div container
+      </p>
+    </div>-----------------------------------------------------------------
+  </body>
+</html>
+
+
+

@@ -1,0 +1,72 @@
+toLocaleString() = returns a string in a readable format with dots or sommas
+
+number.loLocaleString(locale, {options})
+
+-----
+
+let myNum = 123456.789
+myNum = myNum.toLocaleString("en-US")
+console.log(myNum)
+-
+123,456.789
+
+-----------------------------------------
+
+let myNum = 123456.789
+
+myNum = myNum.toLocaleString("hi-IN")
+console.log(myNum)
+-
+1,23,456.789
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                        TO CURRENCY
+
+let myNum = 123456.789
+
+myNum = myNum.toLocaleString("en-US", {style:"currency", currency: "USD"})
+console.log(myNum)
+-
+$123,456.79
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+									PERCENT
+
+let myNum = 123456.789
+
+myNum = myNum.toLocaleString(undefined, {style:"percent"})
+console.log(myNum)
+-
+12,345,679%
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+									UNIT
+
+
+let myNum = 123456.789
+
+myNum = myNum.toLocaleString(undefined, {style: "unit", unit: "celsius"})
+console.log(myNum)
+-
+123,456.789°C
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

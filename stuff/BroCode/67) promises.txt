@@ -1,0 +1,111 @@
+Promise = object that encapsulates the result of an asynchronous operation, let asynchronous methods return values
+like synchronous methods  "I promise i return something in the future"
+
+
+
+let p = new Promise((resolve, reject) => {             //takes 2 parameters
+  let a = 1 + 2                              //this is what the promise does
+  if(a==2){
+    resolve("success")                    //if resolved you get "success"
+  }else{
+    reject("failed")                           //can put anything in here
+  }
+})
+
+p.then((message) => {                                //then for resolve, like if you resolved smth, then you do smth; takes one parameter(message) cuz in resolve("success") is 1 parameter            
+  console.log("this is in the then " + message)
+}).catch((message) => {                                //this one for reject
+  console.log("this is in the catch " + message)
+})
+
+-
+this is in the catch failed
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+													PROMISE.ALL
+let you run all promises at the same time, and after you run them, it will give you then & catch methods
+
+const recordVideoOne = new Promise((resolve, reject) =>{
+  resolve("video 1 recorded")
+})
+const recordVideoTwo = new Promise((resolve, reject) =>{
+  resolve("video 2 recorded")
+})
+const recordVideoThree = new Promise((resolve, reject) =>{
+  resolve("video 3 recorded")
+})
+Promise.all([          --> create an array, where you put all promises
+  recordVideoOne,
+  recordVideoTwo,
+  recordVideoThree
+]).then((messages) => {
+  console.log(messages)
+})
+
+-
+['video 1 recorded', 'video 2 recorded', 'video 3 recorded']  --> all of them been run
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+												PROMISE.RACE
+
+const recordVideoOne = new Promise((resolve, reject) =>{
+  resolve("video 1 recorded")
+})
+const recordVideoTwo = new Promise((resolve, reject) =>{
+  resolve("video 2 recorded")
+})
+const recordVideoThree = new Promise((resolve, reject) =>{
+  resolve("video 3 recorded")
+})
+Promise.race([            --> the fastest one will be executed, and fastest promise will return you .then method
+  recordVideoOne,
+  recordVideoTwo,
+  recordVideoThree
+]).then((messages) => {
+  console.log(messages)
+})
+
+-
+
+video 1 recorded      -->fastest one been run
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+const promise = new Promise((resolve,reject) => {
+  let fileLoad = false
+
+  if(fileLoad){
+    resolve("file loaded")    --> value inside resolve(nameForResolve)
+  } else{
+    reject("file NOT loaded")    --> value inside reject(nameForReject)  --> you named them here, so you put them belowS 
+  }
+})
+
+promise.then(nameForResolve => console.log(nameForResolve))
+       .catch(nameForReject =>console.log(nameForReject))
+
+
+
+-------------------------------------SETTIMEOUT()------------------------------------------->
+
+const promise = new Promise(resolve => {
+  setTimeout(resolve, 5000)
+})
+promise.then( () => console.log("thanks for waiting"))
+
+-
+
+thanks for waiting  --> executed after 5 seconds
+
+
+
+
+
+
+
+
+
+
+
+													
+ 

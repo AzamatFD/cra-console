@@ -1,0 +1,18 @@
+let prices = [5, 10, 15, 20, 25]
+
+
+1 way of iterating
+
+for(let i = prices.length - 1; i >= 0; i -=1){  --> 25,20,15,10,5
+  console.log(prices[i])
+}
+for(let i =0; i < prices.length; i +=1){  --> 5,10,15,20,25
+  console.log(prices[i])
+}
+
+
+2 way of iterating
+
+for(let i of prices){
+  console.log(i)
+}

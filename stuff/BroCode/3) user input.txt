@@ -1,0 +1,30 @@
+First way of doing it:
+it creates pop up from top of the page with "Type your name" inside
+after you typed it will be in console
+
+let username = window.prompt("Type your name");
+console.log(username);
+
+
+--------------------------------------------------------------------------
+Second way:
+HTML part
+<body>
+  
+  <label>Enter your name</label> <br>      --> text above
+  <input type="text" id="myText"> <br>     --> ты присваиваешь айди чтобы потом иметь к нему доступ
+  <button type="button" id="myButton">Submit</button>
+  <script src="index.js"></script>
+</body>
+
+
+JS part
+let username;
+
+document.getElementById("myButton").onclick = function(){
+
+  username = document.getElementById("myText").value;
+  console.log(username);
+}
+
+--------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+let fruits = ["apple","banana", "mango","orange"]
+
+//fruits = fruits.sort()  --> alphabetical orded
+//fruits = fruits.sort().reverse()  --> reversed alphabetical order
+
+for(let fruit of fruits){   --> to display an array
+  console.log(fruit)
+}

@@ -1,0 +1,62 @@
+1) hover
+
+  .subscribe_button:hover{    --> hover: is pseudo-class that's adding some features, cursor changes the color to green
+    background-color: green;
+  }
+ .subscribe_button:active{    --> color change when you press the button
+    background-color: blue;
+  }
+
+-------
+to invert colors when curcor is on the button, you invert colors in hover:
+
+.join_button:hover {
+    background-color:  rgb(59, 165, 231);
+    color: white;
+
+
+-----------------------------------------------------------------------------------------------------------------------
+                                       TRANSITIONS - to make color change smoothly
+
+transition: opacity 0.15s;  --> add this property to button you need to smooth
+transition: what you want to change  smooth time
+--
+
+transition: background-color 1s,   --> for multiple transition add comma, & another feature you wanna transition
+color 1s;
+  }
+-----------------------------------------------------------------------------------------------------------------------
+                                       SHADOWS
+doing it into the style, under button you need
+
+box-shadow: 10px 10px 10px black;
+shadow to   horizontal vertical shadow color
+
+box-shadow: 5px 5px 10px rgba(0,0,0,0.15)  --> fgbA -- A is for opacity of the color(transparent) 
+box-shadow: 5px - движение влево-вправо / 5px - движение вверх-вниз / 10px- степень размытости / grba - цвет тени
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+

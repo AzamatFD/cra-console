@@ -1,0 +1,128 @@
+for special characters use HTML Entity: google what you need end you get code for youre character
+for instance: HTML Entity middle dot, then you smth like &#183, then paste it into the text
+
+width: 300px;  --> this is giving you width of your text, following lines will have same width too
+for example:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  --> this line has 300px width , and other ones has it too
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+
+<style>
+  p{
+    font-family: Arial;   --> font-family for all the text you have, it lets you make your code clean, even new lines will be Arial
+  }
+.video-title{
+ font-weight: bold;
+ font-size: 18px;
+ width: 300px;
+ line-height: 24px;    --> height between two or more lines
+ margin-bottom: 2px;   --> space below the text
+}
+
+.video-stats{
+  font-size: 15px;
+  color: #606060;
+  margin-top: 0px;   --> margin is space between lines of text
+  margin-bottom: 16px;
+}
+.video-author{
+  color: #606060;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.description{
+  width: 280px;    --> to set line or lines of <p><p/> specific width
+  font-size: 14;
+  color:#606060;
+  line-height: 20px;
+}
+</style>
+
+<p class="video-title">
+  Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+<p class="video-stats">
+  3.4M views &#183; 6 months ago
+</p>
+<p class="video-author">
+  Marques Brownley ✓
+</p>
+<p class="description">
+  Talking tech and AI on the heels of Google I/O.
+  Also a daily driver phone reveal from Google's CEO.
+  Shoutout to Sundar!
+</p>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                  CSS Specificity
+What is Specificity?
+If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.
+  p{                      
+    font-family: Arial;
+  }
+.video-title{              ---> this rule will have more priority than the rule above, cuz this rule is more cpecified
+ font-weight: bold;
+ font-size: 18px;
+ width: 300px;
+ line-height: 24px;
+ margin-bottom: 2px;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+IF you have in your text comething like > < symbols, paste them using HTML Entity, so HTML won't be confused
+and use this  &#62;  instead
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                    TEXT ELEMENT
+
+exist inside of the text and modify selected piece of text
+
+<p>
+  Shop early for the best <strong>selection</strong> of holiday favourite. --> <strong/> makes part of the text bold
+</p>
+
+<u><u/>  --> to make element underlined
+------------------------------------------
+<span><span/>  --> does nothing to an elenement, so yo can add class to it:
+
+ Shop early for the best selection of holiday favourites.<span class="link">Shop now</span> &#62;
+
+.link:hover{
+  cursor: pointer;
+  text-decoration: underline;   --> underline it when you hover it
+}
+
+-------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

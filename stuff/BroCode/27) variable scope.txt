@@ -1,0 +1,17 @@
+Variable scope = where a variable is accessible
+
+let = variables are limited to block scope{}
+var = variables are limited to a function(){}
+global variable = is declared outside any function
+(if you put var as an outer variable(global) you will change browser's window properties)
+
+
+doSomething()
+
+function doSomething(){
+  for(var i = 1; i <= 3; i+=1){       --> let i = 1 could only be in these curly braces
+
+  }
+}                                     --> var could be displayed only here
+console.log(i)   --> you get nothing cuz now i is var, but as an outer(global) variable  
+

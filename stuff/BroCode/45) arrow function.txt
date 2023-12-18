@@ -1,0 +1,30 @@
+Arrow function = compact alternative to a traditional function expression
+=>
+=> is replasing function & return words
+function words don't needed, but you need to declare function with let or const, cuz arrow=> don't declare value automatically
+return don't needed, arrow returns value
+
+
+USUALLY WRITTEN CODE:
+
+const greeting = function(userName){
+  console.log(`hello ${userName}`)
+}
+
+greeting("aza")
+
+--
+using arrow code =>
+
+const greeting = (userName) => console.log(`hello ${userName}`)
+
+greeting("aza")
+
+---------------------------------------------------
+
+function sum(a,b){
+return a+b
+}
+
+--
+let sum = (a, b) => a+b

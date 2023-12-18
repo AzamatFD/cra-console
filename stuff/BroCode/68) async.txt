@@ -1,0 +1,31 @@
+Async = makes a function return a Promise
+
+const promise = new Promise((resolve,reject) => {
+  let fileLoad = false 
+
+  if(fileLoad){
+    resolve("file loaded")
+  } else{
+    reject("file NOT loaded")
+  }
+})
+
+promise.then(nameGorResolve => console.log(nameGorResolve))
+       .catch(nameForReject =>console.log(nameForReject) )
+
+-----------------------------------------------------------------------equals to=>
+
+async function loadFile(){
+  let fileLoad = true
+
+  if(fileLoad){
+    return "file loaded"      --> it equals to Promise.resolve("file loaded")
+  } else{
+    throw "file NOT loaded"    --> it equals to Promise.reject("file NOT loaded") //  1.here you clearly see that you THROW an error case
+  }
+}
+
+
+
+loadFile().then(nameGorResolve => console.log(nameGorResolve))
+          .catch(nameForReject =>console.log(nameForReject) )     2. & here you CATCH the error case         

@@ -1,0 +1,16 @@
+array = think of it as a variable that can store multiple values
+
+
+
+let fruits = ["apple", "orange", "banana"]
+
+//fruits[1] = "cocnut" -- to change element
+//fruits.push("lemon")  -- to add element
+//fruits.pop()  -- removes last element
+//fruits.unshift("mango") -- add element to beginning
+//fruits.shift()  -- to remove first element
+//let length = fruits.length -- length of Array(number of elements inside is length)
+//let index = fruits.indexOf("apple")  -- index of element
+
+
+console.log(index)

@@ -1,0 +1,34 @@
+HTML PART
+
+<body>
+  <h1>Number Guessing Game</h1>
+  <p>Pick a number between 1 - 10</p>
+  <label>Enter a guess</label>
+
+  <input id="guessField">
+  <input type="submit" id="submitButton">  --> don't give a shit why, but here i get button
+  <script src="index.js"></script>
+</body>
+
+---------------------------------------------------------------
+
+JS PART
+
+const answer = Math.floor(Math.random() * 10 +1)
+let guesses = 0
+
+document.getElementById("submitButton").onclick = function(){
+  let guess = document.getElementById("guessField").value
+  guesses +=1
+
+  if(guess == answer){
+    alert(`${answer} is the number.It took you ${guesses} guesses`)
+  }
+  else if(guess < answer){
+    alert("Too small")
+  }
+  else{
+    alert("Too large")
+  }
+}
+

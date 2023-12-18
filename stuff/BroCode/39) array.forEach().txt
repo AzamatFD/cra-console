@@ -1,0 +1,16 @@
+array.forEach() = executes a provided callback function once for each array element.
+применяет функцию для каждого элемента в массиве
+
+There are automaticly provided 3 arguments we have access to(element, index, array) 
+there's no neccesary to use all of them, but you can
+and also you can name them whatever you want
+
+
+let students = ["spongebob", "patrick","squidward"]
+students.forEach(capitalize)
+
+function capitalize(element, index, array){
+  array[index] = element[0].toUpperCase() + element.substring(1)    --> element[0] - is for the letter(frist letter starts with zero)
+
+}
+console.log(students[0])

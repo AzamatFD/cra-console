@@ -1,0 +1,72 @@
+Spread operatior = allows an iterable such as an array or string to be expanded in places where zero or more 
+			arguments are expected (unpack the elements)
+
+...
+
+let numbers = [1,2,3,4,5,6,7,8,9]
+console.log(...numbers)    --> unpacked elements and wrote them as individual characters
+---------------------------------------------------------
+
+let username = "aza blyat"
+console.log(...username)
+
+a z a   b l y a t
+
+----------------------------------------------------------
+
+let numbers = [1,2,3,4,5,6,7,8,9]   --> you get error: NaN -- not a number(because it's an array, it can't unpack it)
+let maximum = Math.max(numbers)
+console.log(maximum)
+----
+
+
+let numbers = [1,2,3,4,5,6,7,8,9]
+let maximum = Math.max(...numbers)  --> array was unpacked so you can get answer now
+console.log(maximum)
+-
+9
+
+---------------------------------------------------------------------------------
+let class1 = ["1", "2", "3"]
+let class2 = ["4", "5", "6"]
+
+class1.push(class2)
+console.log(class1)
+-
+['1', '2', '3', Array(3)]  --> you don't want to get an array, you need to unpack attay to get all elements together
+
+------
+
+let class1 = ["1", "2", "3"]
+let class2 = ["4", "5", "6"]
+
+class1.push(...class2)    --> you unpacked array here, so you got good answer
+console.log(class1)
+-
+['1', '2', '3', '4', '5', '6']
+
+------------------------------------------------------------------------------------ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

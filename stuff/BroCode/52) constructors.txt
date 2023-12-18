@@ -1,0 +1,36 @@
+Constructor = a special method of a class, accepts arguments and assigns properties
+
+class Student{
+  constructor(name, age, gpa){ -->2. here
+    this.name = name            --> 1.you are writing it here to be able to write it above
+    this.age = age
+    this.gpa = gpa
+  }
+  stude(){
+    console.log(`${this.name} is studying`)
+  }
+}
+const student1 = new Student("aza", 25, 5.0)   --3. to put parameters here
+console.log(student1.name)
+
+
+-------------------------------
+
+
+ constructor(name, age, gpa){     -->1. writing it like that makes you able to create new objects with different data
+    this.name = name            
+    this.age = age
+    this.gpa = gpa
+  }
+const student1 = new Student("aza", 25, 5.0)
+const student2 = new Student("maza", 25, 5.0)       
+const student3 = new Student("mazafucker", 25, 5.0)     -->2. like this
+
+в противном случае тебе бы пришлось новые данные новых объектов писать прямо в функции:
+
+constructor(){           --> 1.без указания в конструкторе
+    this.name = "aza"         
+    this.age = 25
+    this.gpa = 5.0
+  }
+const student1 = new Student()   --> 2. и без указания данных здесь

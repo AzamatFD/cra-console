@@ -1,0 +1,76 @@
+Модуль – это просто файл. Один скрипт – это один модуль.
+
+Модули могут загружать друг друга и использовать директивы export и import, чтобы обмениваться функциональностью, вызывать функции одного модуля из другого:
+
+export отмечает переменные и функции, которые должны быть доступны вне текущего модуля.
+import позволяет импортировать функциональность из других модулей.
+
+
+
+
+
+
+the idea behind a module is that it's a file of reusable code
+we can import sections of pre-written code to use whenever we want
+great for any general utility values and functions
+helps to make your code more reusable and maintanable
+think of modules as seperate chapters of a book
+
+first you type in html type = "module"
+second: js code
+third: import needed code
+
+second:
+new js file named math_util.js
+
+ export const PI = 3.14159
+
+export function getCircumference(radius){
+  return 2 * PI * radius
+}
+export function getArea(radius){
+  return PI * radius * radius
+}
+
+third:
+
+import { PI, getCircumference, getArea } from "./math_util.js";
+console.log(PI)
+
+let circumference = getCircumference(10)
+console.log(circumference)
+
+let area = getArea(10)
+console.log(area)
+
+-
+
+3.14159
+5 62.8318
+314.159
+
+OR IMPORT USING DIFFERENT TEHNIQUE------------------------------------------------->
+
+import * as mathUtil from "./math_util.js"
+
+console.log(mathUtil.PI)
+
+let circumference = mathUtil.getCircumference(10)
+console.log(circumference)
+
+let area = mathUtil.getArea(10)
+console.log(area)S
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+  <label id="xLabel"></label> <br>           --> i think it works like div, it's invisible but there you have it
+  <label id="yLabel"></label> <br>
+  <label id="zLabel"></label> <br>
+  <button type ="button" id="rollButton">roll</button>
+    
+  <script src="index.js"></script>
+</body>
+</html>
+
+JS part:
+
+let x;
+let y;
+let z;
+
+document.getElementById("rollButton").onclick = function(){    --> when you click that button, function will be executed
+
+   x = Math.floor(Math.random()*6) + 1;
+   y = Math.floor(Math.random()*6) + 1;
+   z = Math.floor(Math.random()*6) + 1;
+
+   document.getElementById("xLabel").innerHTML = x;             --> формулы то ты применил, но как заставить информацию появиться на экране?
+   document.getElementById("yLabel").innerHTML = y;                 для этого меняешь внуренний HTML чтобы изображалась текущая цифра
+   document.getElementById("zLabel").innerHTML = z;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

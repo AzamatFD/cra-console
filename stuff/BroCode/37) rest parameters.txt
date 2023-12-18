@@ -1,0 +1,35 @@
+Rest parameters = represents an indefinite number of parameters (pack arguments into an array)
+...
+
+
+function to find sum of numbers-->
+
+let a = 1
+let b = 2
+let c = 3
+let d = 4
+let e = 5
+
+console.log(sum(a,b))
+
+function sum(a,b){
+  return a + b
+}
+this way of writing code needs to write it again, when you have to find sum of more than two numbers
+----------------------------------------------------------------------------------------------------
+
+let a = 1
+let b = 2
+let c = 3
+let d = 4
+let e = 5
+
+console.log(sum(a,b,c,d))
+
+function sum(...numbers){       --> rest parameter here packed all digits into numbers array
+  let total = 0
+  for(let number of numbers){     -->after you packed them all together you just got access to them using for loop
+    total += number
+  }
+  return total
+}

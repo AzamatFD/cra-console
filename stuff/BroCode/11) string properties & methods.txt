@@ -1,0 +1,14 @@
+let userName = "Aza Krasava";
+
+console.log(userName.length);      --> how many characters it has(11)
+console.log(userName.charAt(0));    --> to print element of index(A)
+console.log(userName.indexOf("A"));  --> index of the letter(0)
+console.log(userName.lastIndexOf("a"));   --> on what index the last "a"(11)
+
+let phoneNumber = "123-456-789"                   
+phoneNumber = phoneNumber.replaceAll("-", "/")  --> ("what to replace", "by what")
+console.log(phoneNumber)
+
+123/456/789
+
+----------------------------------------

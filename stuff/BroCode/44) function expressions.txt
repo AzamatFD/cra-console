@@ -1,0 +1,129 @@
+Function expressions = function without a name(anonymous function)
+				avoid polutting the global scope with names
+				write it, then forget about it
+
+Helps you not to think about function names, declare a function and forget about it
+
+
+sayHello()   --> instead if this
+
+function sayHello(){
+  console.log("hello")
+}
+
+--------------------------------------
+
+const greeting = function(){   --> you can have this.   /you declared variable to function and then called it by variable name
+  console.log("hello")
+}
+ greeting()
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+			INCREASING AND DECREASING COUNTER
+
+1. you create html label and buttons
+2. you write js code(functions that will decrease and increase counters)
+3. link buttons to functions in html using onclick= & then the name of needed function(increasing button gets increasing function)
+by linking buttons in html you avoid redundant code in js, avoiding .onclick function
+
+HTML PART
+
+ <label id="myLabel">0</label> <br>
+ <button id="decreaseB" onclick="decreaseCount()">decrease</button>   --> here you linked you buttons to functions that will increase or decrease counter
+ <button id="increaseB" onclick="increaseCount()">increase</button>
+
+--
+
+JS PART
+
+let count = 0       --> you assign variable to zero in cases where something will be counted, or summed up
+
+function decreaseCount(){
+  count -= 1
+  document.getElementById("myLabel").innerHTML =count
+}
+function increaseCount(){
+  count += 1
+  document.getElementById("myLabel").innerHTML =count
+}
+
+-----------------------------------------------------------------but there is a better way---------->
+1. created labels
+2. wrote js part without declaring function names
+
+HTML PART
+
+<label id="myLabel">0</label> <br>
+ <button id="decreaseB">decrease</button>
+ <button id="increaseB">increase</button>
+
+
+JS PART
+
+let count = 0
+
+document.getElementById("decreaseB").onclick = function(){             --> just declaring a function without redundant name of it / code gets cleaner and easier to read
+  count -= 1
+  document.getElementById("myLabel").innerHTML =count
+}
+
+
+document.getElementById("increaseB").onclick = function(){
+  count += 1
+  document.getElementById("myLabel").innerHTML =count
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

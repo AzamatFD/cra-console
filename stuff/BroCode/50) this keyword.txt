@@ -1,0 +1,14 @@
+This = reference to a particular object
+	the object depends on the immediate context
+just imagine that we are replacing this, whith the name of the object
+
+const car = {
+  model:"lada",
+
+  brake : function(){
+    console.log(`you still drive  ${this.model}`)   --> you can replace it with car.model / will do the same thing
+  }
+}
+
+car.brake()
+console.log(car.model)

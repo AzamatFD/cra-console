@@ -1,0 +1,155 @@
+similar to css grid but more flexible
+also like grid, flexbox needs one container that you will turn into display:flex
+в гриде ширина шаблона меняется, меняется только название если менять шаблоны местами
+в флексбоксе ширина присвоена своя каждому шаблону, поэтому ширина остаётся прежней
+has another properties needed to create youtube header
+
+CREATING FLEXBOX
+1) create one main <div>, that you then turn into flexbox(display:flex;)
+2) create grids as much as items in flexbox needed
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlexBox Practice</title>
+  </head>
+  <body>
+    <div style="
+    display: flex;
+    flex-direction: row;                               -----> it aligns elements horizontally, by rows
+    ">
+      <div style="background-color: lightblue;">div1</div>
+      <div style="background-color: lightpink;">div2</div>
+    </div>
+  </body>
+</html>
+
+elements inside of flexbox are not block-elements anymore(talking about div1 and div2)
+elemens inside of flexbox(div1 and div2) now behave more like inline-block elemens, cuz they take only space they need(not whole line)
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    ">
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; flex:1; ">flex:1</div>          --> for 1fr, to take remaining space use flex:1; 
+    </div>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+во флексе ширина шаблонов устанавливается в самом шаблоне, а в гриде сначала устанавливается ширина шаблона в стайлинге и потом сам шаблон
+поэтому если менять местами шаблоны, то во флексе изменяется полностью шаблон с его шириной и параметрами
+а в гриде если менять местами, то меняется только название, потому что параметры шаблона установлены в стайлинге
+в нашем проекте ютуба, в верхней строчке где поисковик лучше использовать флекс потому что когда ты не зашёл в аккаунт,
+то у тебя вместо четырёх значков справа появляется 3, в гриде шаблоны(читай значки) устанавливаются заранее, то есть 4 уже изначально было бы
+но во флексе количество дивов и есть количество шаблонов(снова читай значков), это значит что легче юзать флекс чем грид
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+justify-content: start;   --> for horizontal alignment from start, from left
+justify-content: center;  ---> horizontally will be placed at the center
+justify-content: end; --> placed on the right side
+
+justify-content: space-between; ---> all for horizontal spacing between items
+justify-content: space-around;
+justify-content: space-evenly;
+
+align-items: stretch; --> vertical alignment, вертикальное расположение, этот чтобы растянуть объект на всю высоту
+align-items: start; --> вертикальное расположение сверху, объект больше не растягивается, занимает столько места, сколько нужно
+align-items: end; --> расположение снизу, объект так же не растягивается, занимает столько места, сколько нужно
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Now you are going to make HEADER
+you'll put it into another <div> so you can display it to flex
+1) create new <div>
+2) you are going to have 3 main sections there, so you create 3 <div>'s and put input into a middle-section(cuz it's in the middle)
+3) make this main div display:flex; and flex-position:row;
+notice that only middle section(where input is) is resizing, so you put input into flex
+4) ты выяснил что растягивается только строка поиска, поэтому остальные элементы установил в определённую ширину, а строку поиска сделал флекс 1
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+}
+.left-section{
+  background-color: lightblue;
+  width: 150px;
+}
+.middle-section{
+  background-color: lightpink;
+  flex:1;
+  margin-left: 70px;
+  margin-right: 35px;
+}
+.right-section{
+  background-color: lightblue;
+  width: 200px;
+
+}
+
+5) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

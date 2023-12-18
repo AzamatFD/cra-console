@@ -1,0 +1,97 @@
+name = "unit"  --> означает что элементы находятся в одной группе, это значит можешь выбрать только 1 из всех элементов
+
+name = "c"   --> в этом случае имена разные и ты можешь выбрать их одновременно(присваивается инпутам radio or checkbox)
+name = "d"
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+HTML PART
+
+<body>
+  
+  <label>Enter a temperature</label><br>
+  <input type="text" id="textBox"> <br>
+
+  <label>convert to:</label><br>
+  <input type="radio" id="cButton" name="unit">
+  <label>Celsius</label><br>
+  <input type="radio" id="fButton" name="unit">
+  <label>Fahrenheight</label><br>
+
+  <button type="button" id="submitButton">submit</button><br>
+  <label id="temLabel"></label>
+  <script src="index.js"></script>
+</body>
+
+---------
+
+JS PART
+
+first you created formulas to convert to celsius and to fahreinheight
+program means, that when you click the button, you need to convert to one of them
+so if one of them(celsius or fahrenheight)selected -->checked, you 
+
+document.getElementById("submitButton").onclick = function(){
+  let temp
+  if(document.getElementById("cButton").checked){
+    temp = document.getElementById("textBox").value       --> here you return value to temp
+    temp = Number(temp)                                   -->text within textbox is string, so you convert it to number
+    temp = toCelsius(temp)                                --> invoking this function to make calculations
+    document.getElementById("temLabel").innerHTML = temp + "°C"       --> you're changing the text in unvisible label, to make it you change innerHTML
+  }
+  else if(document.getElementById("fButton").checked){
+    temp = document.getElementById("textBox").value
+    temp = Number(temp)
+    temp = toFahrenheight(temp)
+    document.getElementById("temLabel").innerHTML = temp + "°F"
+  }
+  else{
+    document.getElementById("temLabel").innerHTML = "Select a unit"       ---> if nothing's selected you get this message
+  }
+  
+
+
+}
+
+
+function toCelsius(temp){
+  return (temp - 32) * (5/9)
+
+}
+
+function toFahrenheight(temp){
+  return temp * 9 / 5 + 32
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

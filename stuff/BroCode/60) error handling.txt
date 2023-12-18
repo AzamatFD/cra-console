@@ -1,0 +1,60 @@
+Error = object with a description of something went wrong
+
+
+
+try{
+  console.laf()      --> here should be mistake case
+}
+catch(error){                          --> what to do if mistake happens//catch(here you put mistake that pops up in console)
+  console.log("you wrote it wrong")
+}
+
+---------
+
+
+try{
+  let x = window.prompt("enter a #")           --> 1. all this code will work if
+  x = Number(x)
+
+  if(isNaN(x)) throw "that wasn't a number"
+  if(x=="") throw "that was empty"
+
+  console.log(`${x} is a number`)
+}
+catch(error){
+  console.log(error)         --> 2. here you type error, if there will be message like "wtf", instead of code above, you gon get "wtf" only
+}
+
+----------finally------>
+
+try{
+  let x = window.prompt("enter a #")
+  x = Number(x)
+
+  if(isNaN(x)) throw "that wasn't a number"
+  if(x=="") throw "that was empty"
+
+  console.log(`${x} is a number`)
+}
+catch(error){
+  console.log(error)
+}
+finally{                                     --> in any case(you have error or not) it will be executed
+  console.log("this always executes")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

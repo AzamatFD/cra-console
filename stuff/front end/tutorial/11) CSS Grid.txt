@@ -1,0 +1,111 @@
+GRID is layout, that has rows and colums
+как крестики-нолики
+GRIDS are alighned, don't take any place between them
+more text in column, higher it gets
+
+when you grid images, make sure you didn't set some width, just make it width: 100%; --> to take all the place of the layout
+
+
+GRID CREATING:
+1) you create <div>
+2) style it with display:grid; and grid-template-columns:; , & how many columns you want(add 1fr 1fr 1fr for 3 columns, also if stretching needed)
+3) put all the code inside one main <div>
+
+
+
+number of divs has to match to number of colums in grid
+if you have more divs than columns, columns will be created under
+
+1fr; --> (fr-free space) that means take remaining amount of space, whole line will be taken
+
+<div style="background-color: lightblue;">div 1</div>   --> this is INLINE STYLES
+
+------------------------------------------------------------------------
+          CREATING GRID
+they take whole place inside columns and rows(dont take whole line, except fr;)
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+  <body>
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 100px;                              --> 100px for wide of columns, 100px 100px  -- > one by two grid(1 row 2 columns)
+    ">
+      <div style="background-color: lightblue;">div 1</div>          --> painted them to see
+      <div style="background-color: lightpink;">div 2</div>
+    </div>
+  </body>
+</html>
+
+-------------------------------------------------------------------------
+          FR
+
+<div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;                              --> 2fr means: take 2 times more space, it works like ratio
+    ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+------------------------------------------------------------------------
+
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    ">
+      <div style="background-color: lightblue; height:200px;" >100px</div>
+      <div style="background-color: lightpink; height:200px;" >1fr</div>
+      <div style="background-color: lightblue; height:200px;" >2fr</div>
+      <div style="background-color: lightpink; height:200px;" >1fr</div>
+      <div style="background-color: lightblue; height:200px;" >100px</div>
+      <div style="background-color: lightpink; height:200px;" >1fr</div>   --> если <div>ов больше чем column ов, то они заполнять пространство под остальными дивами в таком же размере
+      
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

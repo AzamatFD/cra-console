@@ -1,0 +1,14 @@
+const = a variable that can't be changed
+adds some security to code
+
+
+const PI = 3.14159;               --> means that this variable won't be changed (write the name of variable with CAPITAL - for practice only, not neccessary)
+let radious;
+let circumference;
+
+pi = 500;                        --> this assignment won't be accepted, cause u have const PI 
+
+radious = window.prompt("Enter radious");
+radious = Number(radious);
+circumference = 2 * PI * radious;      --> don't forget about this CAPITALISING
+console.log(circumference);

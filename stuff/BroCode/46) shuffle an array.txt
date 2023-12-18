@@ -1,0 +1,19 @@
+let cards = ["a", "2","3","4"]
+
+shuffle(cards)
+console.log(cards)
+
+function shuffle(array){
+  let currentIndex = array.length
+
+  while(currentIndex != 0){                                   --> while array length doesn't = to zero function runs
+    let randomIndex = Math.floor(Math.random() * array.length)
+    currentIndex -= 1                                         --> each iteration closer to 0, more length more iterations 
+
+    let temp = array[currentIndex]                        --> this one is for temporary placeholder
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temp
+  }
+
+  return array
+}

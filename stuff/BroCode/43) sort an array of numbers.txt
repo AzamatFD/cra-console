@@ -1,0 +1,10 @@
+pretended that this is grades of students & you gotta sort them 
+
+let grades = [100, 50, 90, 60, 80, 70]      --> 1.step
+grades = grades.sort(descendingSort)        -->3.you declare garades to yet sorted grades
+
+function descendingSort(x, y){          --> 2.you create function that sort numbers
+  return y - x                              x & y have to compare two elements at a time
+}
+console.log(grades)    --> 4. you print what you got after sorting numbers
+ 

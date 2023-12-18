@@ -1,0 +1,67 @@
+here you will recreate youtube website
+
+                                                          HOW TO DOWNLOAD IMAGE?
+1) inspect site from where you want to take that image
+2) in elements you see link of the image, go there
+3) save opend image to the folder, where you have all code, and there choose your folder name in VSCode
+4) in VSCode you have now your image
+5) put image into body part/ img is void attribute(no need for closing tag)
+ <body>
+    <img src="thumbnail-1.webp" alt="sorry(">   src--> the name of the file you have in vscode, alt--> text, if image wont be domwnloaded
+  </body>
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                              IMG PROPERTIES
+
+width: 300px;   -> images will automaticly be smaller, without losing its shape
+height: 300px;
+object-fit: cover;  --> its covering 300*300 without losing its shape
+object-position: right;  --> moves to left or right your image
+object-fit: contain;  --> shink image to 300width and height
+	
+		FIRSTLY IMAGE SETS BY WIDTH, EVEN IF HEIGHT BIGGER THAN WIDTH, IMAGE WILL HAVE NORMAL SHAPE(LIKE FUCK THE HEIGHT)
+		HEIGHT WILL BE APPLIED IF YOU ADD OBJECT-FIT
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                              INPUT
+<input type="text" name="" id=""> 
+1) put it into <body> part
+2) choose type:text - как обчный поисковик, checkbox - small square
+
+<input class="search-bar" type ="text" placeholder="Search"> --> placeholder is text inside
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

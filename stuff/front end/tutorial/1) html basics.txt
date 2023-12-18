@@ -1,0 +1,27 @@
+<button>Hello</button>  --> to create button, named Hello
+<p>paragraph of text</p>   --> creating text
+<p> --> HTML ELEMENT
+<button> -->tag, with tag name insight
+<button>Hello</button>   --> opening and closing tag
+
+<a href="https://www.youtube.com/">Link to Youtube</a>  --> to create a link, you paste the website into href, then the name of the link
+anchor element -link to another website
+
+href="https://www.youtube.com/" -- > HTML ATTRIBUTE -> how an element behaves
+
+target="_blank" --> will open page in new tab
+
+-------------------------
+extra new spaces are ignored in html
+-------------------------
+<button>
+    Hello
+</button>
+<p>
+    paragraph of text
+</p>
+<a href="https://www.youtube.com/" target="_blank">        --> for easy reading
+    Link to Youtube
+</a>
+--------------------------
+

@@ -1,0 +1,158 @@
+for style
+
+<style>
+  button {   --> button is css selector(which element we're targeting) --> here all buttons
+    background-color: red;     --> to make red SUBSCRIBE button
+  }
+</style>
+
+<button>SUBSCRIBE</button>
+
+--------------
+
+background-color: red  
+css property      css value
+what to change     how to change
+
+---------------
+YOUTUBE BUTTON
+
+<style>
+  button {
+    background-color: rgb(196, 3, 3);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 108px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+</style>
+
+<button>SUBSCRIBE</button>
+
+----------------------
+CLASS
+
+<style>
+  .subscribe_button {         --> to target only this class name(all these codes for subscribe_button only)
+    background-color: rgb(196, 3, 3);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 108px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+</style>
+
+<button class="subscribe_button">SUBSCRIBE</button>   --> class name to that button, so another buttons wont be the same
+
+---------------------
+1) create element using html
+2) style it with css one-by-one
+
+
+all button styles are in one style tag
+<style>
+  .subscribe_button {
+    background-color: rgb(196, 3, 3);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 108px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 5px;         --> for blank space to the right
+  }
+  .join_button {
+    background-color: white;
+    border-color: rgb(59, 165, 231);
+    border-style: solid;
+    border-width: 0.8px;
+    color: rgb(59, 165, 231);
+    height: 35px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+</style>
+
+<button class="subscribe_button">SUBSCRIBE</button>
+
+<button class="join_button">JOIN</button>
+
+------------------------------------------------------------
+
+<style>
+  .subscribe_button {
+    background-color: rgb(196, 3, 3);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 108px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .join_button {
+    background-color: white;
+    border-color: rgb(59, 165, 231);
+    border-style: solid;
+    border-width: 0.8px;
+    color: rgb(59, 165, 231);
+    height: 35px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  .tweet_button {
+    background-color: rgb(86, 156, 241);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 74px;
+    border-radius: 17.5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+<button class="subscribe_button">SUBSCRIBE</button>
+
+<button class="join_button">JOIN</button>
+
+<button class="tweet_button">Tweet</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+Array.map() = executes a provided callback function once for each array element AND creates a new array.
+
+this code squaring numbers:
+
+let numbers = [1,2,3,4,5]
+let squares = numbers.map(square)
+
+function square(element){
+  return Math.pow(element, 2)
+}
+console.log(squares)
+
+1) you got your array of numbers --> let numbers = [1,2,3,4,5]
+2) you write function square using only element(cuz you need only one number each time) 
+3) it will create new array(that's what .map() function does), so you create new array named squares
+4) where numbers - name of the first array, .map() - our function, (square) - callback function applied to each element: let squares = numbers.map(square)

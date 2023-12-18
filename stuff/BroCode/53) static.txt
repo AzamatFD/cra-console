@@ -1,0 +1,114 @@
+Static = belongs to the class, not the objects
+		properties: useful for caches, fixed-configuratios
+		methods: useful for utility functions
+objects  don't have access to static 
+
+
+1. you created a class
+class Car{
+
+
+  constructor(model){
+    this.model = model
+    
+  }
+}
+const car = new Car("mustang")
+const car2 = new Car("ladashit")
+const car3 = new Car("ladagavno")
+
+2. lets pretend that you want to count number of cars:
+
+class Car{
+
+  nemberofcars = 0             --> added this one
+  constructor(model){
+    this.model = model
+    this.nemberofcars +=1       --> increase after each iteration
+  }
+}
+const car = new Car("mustang")
+const car2 = new Car("ladashit)
+const car3 = new Car("ladagavno)
+console.log(car.nemberofcars)
+console.log(car2.nemberofcars)
+console.log(car3.nemberofcars)
+-
+1                                  --> but you get only 1, is that because every car object has their own car variable
+1
+1
+
+3. add static to variable, it will be own by class, not object now
+
+class Car{
+
+  static nemberofcars = 0
+
+  constructor(model){
+    this.model = model
+    Car.nemberofcars +=1          --> add the name of class, cuz it's now classes bitch
+  }
+}
+const car = new Car("mustang")
+const car2 = new Car("ladashit")
+const car3 = new Car("ladagavno")
+console.log(Car.nemberofcars)      --> to display that variable
+
+
+------------------------
+METHODS AS STATIC
+------------------------
+class Car{
+
+  static nemberofcars = 0
+
+  constructor(model){
+    this.model = model
+    Car.nemberofcars +=1
+  }
+   static startrace(){            --> static method
+    console.log("3..2..1..go!")
+  }
+}
+const car = new Car("mustang")
+const car2 = new Car("ladashit")
+const car3 = new Car("ladagavno")
+console.log(Car.nemberofcars)
+Car.startrace()                  --> to display it
+ 
+
+
+
+-----------------------------------------another video-------------->
+program to compare width & height of two squares:
+
+
+class Square{
+  constructor(_width){
+    this.width = _width
+    this.height = _width
+  }
+  static equals (a,b){
+    return a.width * a.height == b.width * b.height      --> it means if a times a equals b times b return true, if not false
+  }
+}
+let square1 = new Square(4)           --> here you put values that will be compared
+let square2 = new Square(3)
+console.log(Square.equals(square1,square2 ))        --> static belongs to class, so you put class name /two parameters because here -> equals(a,b) - you got two parameters too
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

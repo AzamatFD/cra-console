@@ -1,0 +1,99 @@
+Super = refers to the parent class
+	Commonly used to invoke constructor of a parent class
+calls constructor of the parent class
+
+
+class Animal{
+  
+}
+
+class Rabbit extends Animal{
+  constructor(name,age,runSpeed){
+    this.name =name
+    this.age = age
+    this.runSpeed = runSpeed
+  }
+}
+class Fish extends Animal{
+  constructor(name,age,swimSpeed){
+    this.name =name
+    this.age = age
+    this.swimSpeed = swimSpeed
+  }
+}
+class Hawk extends Animal{
+  constructor(name,age,flySpeed){
+    this.name =name
+    this.age = age
+    this.flySpeed = flySpeed
+  }
+}
+const rabbit = new Rabbit("rabbit", 1, 40)
+const fish = new Fish("fish", 2, 80)
+const hawk = new Hawk("hawk", 3, 200)
+
+console.log(rabbit.name)
+console.log(rabbit.age)
+console.log(rabbit.runSpeed)
+
+if you have child classes that have constructors, you might want to invoke constructor of a parent class
+
+---------------------->
+
+class Animal{
+  constructor(name,age){            --> you added constructor here
+    this.name = name
+    this.age = age 
+  }
+}
+
+class Rabbit extends Animal{
+  constructor(name,age,runSpeed){
+    super(name, age)              --> & added super with properties in it you don't want to repeat
+    this.runSpeed = runSpeed
+  }
+}
+class Fish extends Animal{
+  constructor(name,age,swimSpeed){
+    super(name,age)
+    this.swimSpeed = swimSpeed
+  }
+}
+class Hawk extends Animal{
+  constructor(name,age,flySpeed){
+    super(name,age)
+    this.flySpeed = flySpeed
+  }
+}
+const rabbit = new Rabbit("rabbit", 1, 40)
+const fish = new Fish("fish", 2, 80)
+const hawk = new Hawk("hawk", 3, 200)
+
+console.log(rabbit.name)
+console.log(rabbit.age)
+console.log(rabbit.runSpeed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

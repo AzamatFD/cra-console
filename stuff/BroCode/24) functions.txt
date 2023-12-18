@@ -1,0 +1,19 @@
+Function = define code once, and use it many times.
+	     To perform some code, call the function name.
+
+startProgram()   --> when you call outer function, it can't get variables from startProgram and then paste them into happyBirthday automaticly,
+function startProgram(){                                                                                     so cuz of that you pasted their names in happyBirthday and startProgram below
+  let userName = "aza"      --> variables userName & age are known only inside of it's curly braces{}
+  let age = 25
+
+  happyBirthday(userName, age)
+}
+
+function happyBirthday(userName, age){
+  console.log("Happy Birthday to you")
+  console.log("Happy Birthday to you")
+  console.log("Happy Birthday dear", userName)
+  console.log("Happy Birthday to you")
+  console.log("You are" + age + "years old")
+}
+	

@@ -1,0 +1,60 @@
+Await = makes an async function wait for a promise
+
+async function loadFile(){
+  let fileLoad = true
+
+  if(fileLoad){
+    return "file loaded"
+  } else{
+    throw "file NOT loaded"
+  }
+}
+
+async function startProcess(){
+  let message = await loadFile()         --> await method needs to be run inside of async function, that's why you putted await inside async
+console.log(message) 
+}
+startProcess()
+
+-
+
+file loaded
+
+-----------------------
+
+async function loadFile(){
+  let fileLoad = false          --> 1. if you got false, you get error
+
+  if(fileLoad){
+    return "file loaded"
+  } else{
+    throw "file NOT loaded"
+  }
+}
+
+async function startProcess(){
+ 
+  try{                                 --> 2. you got try{} to handle the error                     
+    let message = await loadFile()
+    console.log(message)
+  }
+  catch(error){               --> 3. & if you get error what you do? you catch it (describing what to do with it)
+    console.log(error)
+  }
+}
+startProcess()
+
+-
+
+file NOT loaded
+
+
+
+
+
+
+
+
+
+
+

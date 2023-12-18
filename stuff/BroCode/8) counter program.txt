@@ -1,0 +1,102 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <label id="countLabel">0</label> <br>           --> starting here
+ 
+    <div class="div">
+      <button id="decreaseBtn">decrease</button>
+      <button id="resetBtn">reset</button>
+      <button id="increaseBtn">increase</button>
+  
+    </div>
+    
+  <script src="index.js"></script>
+</body>
+</html>
+---------------------------------------------------------------------------
+
+JS:
+
+let count = 0;
+
+document.getElementById("decreaseBtn").onclick = function(){       --> when you click that function runs
+  count-=1;                                                        --> minusing from 0 one 
+  document.getElementById("countLabel").innerHTML = count;         --> it says label equals to count, it it's -5, label at the top gon' be -5.
+}
+document.getElementById("resetBtn").onclick = function(){
+  count=0;
+  document.getElementById("countLabel").innerHTML = count;
+}
+document.getElementById("increaseBtn").onclick = function(){
+  count+=1;
+  document.getElementById("countLabel").innerHTML = count;
+}
+
+--------------------------------------------------------------------------
+
+CSS:
+
+#countLabel{
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+
+.div{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

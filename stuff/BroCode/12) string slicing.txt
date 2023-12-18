@@ -1,0 +1,12 @@
+slice() extracts a section of a string and returns it as a new string, without modifying the original string.
+
+
+let fullName = "Bro Code"
+
+let firstName;
+let lastName;
+
+firstName = fullName.slice(4)
+console.log(firstName)
+lastName = fullName.slice(0, 3)
+console.log(lastName)

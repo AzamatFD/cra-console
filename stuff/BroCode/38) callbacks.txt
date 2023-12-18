@@ -1,0 +1,3 @@
+Callback = a function passed as an argument to another function.
+
+study this shit, don't know wtf is that

@@ -1,0 +1,121 @@
+
+body{
+  margin: 0;
+  font-family:'Roboto';
+}
+.acute{
+  margin-left:-.5em;
+}
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 700px;
+  flex-shrink: 0;
+}
+
+/* Navbar */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+
+.simple{
+  display: flex;
+  font-family: 'Ubuntu';
+  gap: 5px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  align-items: center;
+}
+
+nav{
+  margin:31.5px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  gap: 6em;
+}
+
+.logos{
+  display: flex;
+  gap: 3em;
+}
+
+nav ul li a{
+  color: #4C5866;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+}
+
+.info-section{
+  width: 444px;
+  margin-top: 165px;
+}
+
+h1{
+  margin: 0;
+  color: #4C5866;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  padding-bottom: 30px;
+}
+
+.bumaga{
+  margin: 0;
+  color: #85859B;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom:30px;
+}
+
+button{
+  color: #7875FE;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: white;
+  width: 255px;
+  height: 70px;
+  border-color: #7875FE;
+  border-width: 1px;
+  cursor: pointer;
+  transition:300ms; 
+  }
+
+  button:hover{
+    background-color: #6361ee;
+    color: white;
+  }
+
+  .logos:hover{
+    cursor: pointer;
+  }
+
+  body{
+    background-image: url(images/paper.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position:141% -16%;
+  }
+
+  

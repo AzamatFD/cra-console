@@ -1,0 +1,126 @@
+Adds another dimension to our page
+Instance: red notification number over notifications
+	    video time over preview
+	    keeps header on place while scrolling
+
+
+<!DOCTYPE html>
+<html>
+  <head><title>Position Practice</title></head>
+  <body style="height: 3000px;
+		   padding-top: 60px;     ----> чтобы header не закрывал обзор и было пространство между header и контентом снизу
+	">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;      ----> its like floating above the page now, its sticking in one place, doesn't move
+	top:0px;               ----> определяет место сверху страницы
+	bottom:500px;           ---> растягивает элемент между верхом и низом
+	left: 0px;             ---> определяет место слева страницы
+	right:0px;            ------> если указать слева и справа, то элемент растянется на всю страницу насколько будет указано отойти слева и справа
+	height:70px;          ----> указываем высоту чтобы эта высота не двигалась и не менялась, можно так же ширину указать
+    ">header</div>
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+    ">div1</div>
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+    ">div2</div>
+  </body>
+</html>	
+
+----------------------------------------------------------------------------------------------
+
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;            ---------> для рамки(читай линии) только с одной стороны
+  border-bottom-style: solid;
+  border-bottom-color: rgb(221, 209, 209);
+
+----------------------------------------------------------------------------------------------
+
+p{
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+ body{
+  margin: 0;
+  padding-top: 80px;   ---> это тоже расстояние от сайдбара, но только сверху
+  padding-left: 80px;   --> это ты сделал чтобы было расстояние от сайдбара до превьюшки видео
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

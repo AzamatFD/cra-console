@@ -1,0 +1,26 @@
+Inheritance = a child class can inherit all the methods and properties from parent class
+
+
+class Parent{
+  alive = true
+  eat(){
+    console.log(`${this.name} is eating`)
+  }
+}
+class Rabbit extends Parent{
+  name = "rabbit"
+  run(){
+    console.log(`${this.name} is running`)
+  }
+}
+class Fish extends Parent{
+  name = "fish"
+  swim(){
+    console.log(`${this.name} is swimming`)
+  }
+}
+const rabbit = new Rabbit()
+const fish = new Fish()
+fish.swim()
+console.log(fish.alive)
+fish.eat()

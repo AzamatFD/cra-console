@@ -1,0 +1,16 @@
+setInterval() = invokes a function repeatedly after a number of milliseconds
+			asynchronous function (doesn't stop execution of your program)
+
+let count = 0
+let max = window.prompt("count up to what #?")
+max = Number(max)
+
+const myTimer = setInterval(countUp, 1000)   --> where countUp(what to repeat), 1000(in 1 second repeat countUp)
+
+function countUp(){
+  count += 1              --> this function will add 1 to count every second
+  console.log(count)      --> you will see adding
+  if(count >= max){       ---> to count till window.prompt
+    clearInterval(myTimer)      --> to stop interval when counting will reach window.prompt
+  }
+}

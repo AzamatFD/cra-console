@@ -1,0 +1,192 @@
+.side-bar img {    --> таким вот образом ты можешь применить изменения на все изображения в side-bar(пробел между ними значит что все изображения сайдбара)
+}				это заменяет использование class="" и уменьшает количество строк кода
+
+.sidebar-link img {
+  height: 24px;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------
+            Turned sidebars into flexbox, to center elements vertically and horizontally
+
+.sidebar-link{
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+.sidebar-link{
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;   --> to place elements one under another(row-for one by one)
+}
+
+
+-------------------------------------------------
+
+.search-button:hover.tooltip{        ---> it means target sidebars tooltip only
+  
+}
+
+         КОЛИЧЕСТВО ПРОБЕЛОВ ВАЖНО ЗДЕСЬ! А ТО НЕ ПРИВЕДЁТ К ТОМУ КОДУ, КОТОРЫЙ НУЖЕН
+
+
+------------------------------------------------
+
+ 
+ pointer-events: none;             ---> это когда ты hover over the tooltip, then its like hovering the button, tooltip appears, you need this to appear only when hovering the
+							button not tooltip
+
+
+
+
+
+
+------------------------------------------------
+               КАК СКРЫТЬ ОПИСАНИЕ К КНОПКЕ
+
+.search-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;              ----> так описание внизу вообще не видно
+  transition: opacity 0.15s;
+  pointer-events: none;    ---> это чтобы только кнопка выделялась,а не надпись внизу
+} 
+.search-button:hover .tooltip{
+  opacity: 1;             -----> и оно появляется только когда наведёшь на кнопку саму(не на описание)
+
+
+----------------------------------------------------------------------------------------------------------------
+
+.search-button .tooltip,
+.voice-search-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;     ----> позволяет тебе расположить описание под картинку так, чтобы оно не накладывалось на саму картинку
+} 
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+			ИЗ КАРТИНКИ В ССЫЛКУ
+чтобы картинка при нажатии была ссылкой, нужно обернуть <img/> в <a>
+
+<a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail" src="thambnails/thumbnail-1.webp" alt="sorry(">
+</a> 
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container{      ----> first step: ralative
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip{    ---> second step:absolute
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+} 
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{        ---> hovering
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+Responsive design - when your web page когда твоя страница изменяется соразмерно размеру окна браузера
+
+MEDIA QUERY
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 600px) {           ---> вот оно медиа куэри(если максимальная ширина страницы 600рх или меньше, то грид будет в две колонки(или как у нас два видео на страницу))
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@media (min-width:1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+а это наоборот если шиирна страницы минимум 1000рх или больше, то на странице будет 4 колонки(читай видео)
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 751px) and (min-width:999px) {             ---> and you can combine them like that
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width:1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+      CSS SHORTCUTS
+
+padding: 4px;    --> all 4 sides will be 4px
+padding: 4px 10px;  --> 4px(top bottom) 10px(left right)
+padding: 4px 10px 15px 20px; --> padding for all sides(top, right, bottom, left)
+
+margin:; --- works the same way as padding
+
+border: 1px solid fgb(200, 200, 200)  --- for width, style, color
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   INHERITANCE
+
+When inner elements take features of outer element
+Usually work with text elements, like weight, size, family 
+It doesn't effects like border, padding or margin
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+   SEMANTIC ELEMENTS
+
+Same as divs, matters for the screan readers
+
+
+----------------------------------------------------
+
+   COMMENTS
+
+<!--comment-->      look like that in html
+/*comment*/         in css
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

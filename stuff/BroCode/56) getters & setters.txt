@@ -1,0 +1,177 @@
+Get = binds an object property to a function when that property is accessed
+you can perform some additional logic using get
+Set = binds an object property to a function when that property is assigned a value
+
+class Car{
+  constructor(power){
+    this._power = power
+  }
+  get power(){
+    return `${this._power}hp`
+  }
+}
+let car = new Car(400)
+
+console.log(car.power)
+
+_power - means that this property protected
+
+
+
+-------------------setters--->
+
+
+class Car{
+  constructor(power){
+    this._power = power
+  }
+  get power(){
+    return `${this._power}hp`
+  }
+  get gas(){                  --> хз но по ходу сеттер не может жить без геттера потому что какая-то хуита выходит если вот эту хрень не написать
+    return `${this._gas}L`
+  }
+  set gas(value){           --> setter
+      if(value > 50){
+        value = 50
+     }
+      else if(value < 0){
+        value = 0
+     }
+      this._gas = value
+   }
+}
+let car = new Car(400)
+car.gas = 10000000
+
+console.log(car.power)
+console.log(car.gas)
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GETTER
+with getter you can't change it, you can't declare new fullName, it's for reading only
+
+const person = {
+  firstName : "aza",
+  lastName : "f",
+  get fullName(){
+    return `${person.firstName} ${person.lastName}`
+  }
+}
+
+// getters => to access properties
+// setters => to change them
+console.log(person.fullName)
+
+
+--------------------------------------------------------------------------------
+fullName()
+console.log(person.fullName())  --> you call it like method ---->
+
+get fullName()
+console.log(person.fullName)   --> you call it like property
+
+--------------------------------------------------------------------------------
+SETTER
+
+const person = {
+  firstName : "aza",
+  lastName : "f",
+  get fullName(){
+    return `${person.firstName} ${person.lastName}`
+  },
+  set fullName(needsparameter){                         --> setter where you need value inside: set fullName(?){} --> fullName(needsparameter){}
+    const parts = needsparameter.split(' ')
+    this.firstName = parts[0]
+    this.lastName = parts[1]
+  }
+}
+person.fullName='john smith'                       --> that way you can change "aza f" to 'john smith'
+// getters => to access properties
+// setters => to change them
+console.log(person)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

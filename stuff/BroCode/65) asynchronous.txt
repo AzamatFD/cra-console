@@ -1,0 +1,18 @@
+              synchronous code = in an ordered sequence
+			step-by=step linear instructions
+			(start now, finish now)
+examples:
+console.log("yeah")   --> they will run step-by-step one then another
+console.log("yeah2")
+
+
+              asynchronous code = out of sequense
+			  access a database; fetch a file; tasks that take time (start now, finish sometime later)
+examples:
+console.log("yeah")
+setTimeout(() => console.log("yeah with time", 5000))
+console.log("time")
+-
+yeah
+index.js:3 time
+index.js:2 yeah with time

@@ -1,0 +1,23 @@
+Nested functions = function inside other function. Outer functions have access to inner functions. inner functions are "hidden",
+			from outside the outer function. Used in closures.
+
+it's like you are loging in and get information
+
+
+let userName = "aza"
+let messages = 0
+
+login()
+
+function login(){
+  displayUserName()           --> but they can be called inside another function
+  displayMessages()
+
+  function displayUserName(){             --> these functions can't be called where login() cuz you don't have access to them
+    console.log(`welcome ${userName}`)
+  }
+
+  function displayMessages(){
+    console.log(`you have ${messages} messages`)
+  }
+}

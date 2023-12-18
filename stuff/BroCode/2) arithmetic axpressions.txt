@@ -1,0 +1,12 @@
+students += 1  adding 1
+students *= 2  multiplying by 2
+students /= 2  dividing by 2
+students -= 1  minusing 1 from students
+
+shortcut doesn't work with %modulus operator
+
+порядок выполнения матем уравнений такой:
+1) скобки
+2) exponents
+3) умножение и деление
+4) плюс и минус

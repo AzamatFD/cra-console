@@ -1,0 +1,12 @@
+Array.filter() = creates a new array with all elements that pass the test provided by a function
+
+you are going to create new array of those who is 18 or older:
+
+let ages = [28, 16, 21, 17, 19, 90]
+let adults = ages.filter(checkAge)   --> this test will create new array, so you declare it here
+
+function checkAge(element){     
+  return element >= 18        --> your text for .filter()
+}
+
+console.log(adults)

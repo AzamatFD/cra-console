@@ -1,0 +1,10 @@
+It's unique identifier to locate anything on the internet.
+
+In early days servers had only numeric adresses like 98.456.342.798 and it's hard to remember
+DNS(Domain Name System) is converting numbers to http//:google.com 
+and http//:google.com  --> this is URL(Uniform Resource Locator)
+
+Contains from protocol(http//: part), domain(youtube.com) and path(more concretely part)
+
+----------------------------------------------------------------------------------------------------------------------------------
+

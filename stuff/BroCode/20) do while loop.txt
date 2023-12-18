@@ -1,0 +1,11 @@
+do while loop = do something, then check the condition, repeat if condition is true
+Same as while loop, but here you do something at least once, then you're checking the condition
+With while loop you check the condition, then doing something
+
+let userName
+
+do{
+  userName = window.prompt("Enter you name")
+}while(userName=="")
+
+console.log("hello", userName)

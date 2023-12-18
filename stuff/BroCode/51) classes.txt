@@ -1,0 +1,155 @@
+Classes = a blueprint for creating objects
+		define what properties and methods they have
+		use a constructor for unique properties
+
+u can create as much objects as you want using classes
+1. u create a class with methods in it
+2. you declare object with: const player = new Player() - where player the name of object, new Player() is class
+
+
+class Player{                
+
+  score = 0
+
+  pause(){                                 --> this is function, but in classes there is no need to write function
+    console.log("You paused the game")
+  }
+  exit(){
+    console.log("You exited the game")
+  }
+}
+const player = new Player()
+player.pause()
+player.exit()
+
+
+
+-------------------------------------------------another video-tutorial------------->
+
+
+class Rectangle{
+  constructor(width, heigth, color){
+    this.width = width
+    this.heigth = heigth          --> properties
+    this.color = color
+  }
+
+  area(){                                  --> methods
+    return this.width * this.heigth
+  }
+}
+let rectangle1 = new Rectangle(2,3,"purple")
+
+console.log(rectangle1.area())
+console.log(rectangle1.width)
+
+
+---
+every class have constructor
+it's the methods that being ran only once during the life on an object
+ran when object is being  created
+used to setup your object
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+													POLYMORPFISM
+it's redefining a method inside a derived child class of a parent
+it's overwriting method  inside child class
+you overwrite it just by writing same method name then what is has to do
+
+you can even use super. method inside of a child class to call parents method
+
+
+class Animal{
+  constructor(name){
+    this.name = name
+  }
+
+  makeSound(){                            ---> you overwrote it
+    console.log("Generic animal sound")
+  }
+}
+
+class Dog extends Animal{
+  constructor(name){
+    super(name)
+  }
+
+  makeSound(){                          ---> write same name, declare new task inside of it(that's polymorphism)
+    console.log("whoof whoof")
+  }
+}
+const a1 = new Animal("Dom")
+const a2 = new Dog("Jeff")
+a1.makeSound()
+a2.makeSound()
+-
+Generic animal sound
+whoof whoof
+
+------------------------------------------------------calling parents method using super------------>
+usually super. calls parents constructor
+here it can call parents method
+
+
+class Animal{
+  constructor(name){
+    this.name = name
+  }
+
+  makeSound(){
+    console.log("Generic animal sound")
+  }
+}
+
+class Dog extends Animal{
+  constructor(name){
+    super(name)
+  }
+
+  makeSound(){
+    super.makeSound()              --> you call parents method within overwritten method
+    console.log("whoof whoof")
+  }
+}
+const a1 = new Animal("Dom")
+const a2 = new Dog("Jeff")
+a1.makeSound()
+a2.makeSound()
+-
+Generic animal sound
+Generic animal sound    --> where super.makeSound() method worked
+whoof whoof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

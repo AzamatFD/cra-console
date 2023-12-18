@@ -1,0 +1,17 @@
+Map = object that holds key-value pairs of any data type
+
+new Map() – создаёт коллекцию.
+const store = new Map([
+  ["t-shirt", 20],                    --. don't furget about using commas, or you get error
+  ["jeans", 30],
+  ["bikini", 40]
+])
+
+//console.log(store.get("t-shirt"))         --> to get the value key has
+//store.set("hat", 40)                      to add pair
+//store.delete("jeans")                     to delete pair
+//console.log(store.has("jeans"))           to know do you has this pair  --> returns true or false
+//console.log(store.size)                   display map's  size
+map.clear() – очищает коллекцию от всех элементов.
+
+store.forEach((value,key) => console.log(`${key} $${value}`))
